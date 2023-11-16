@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="style/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+		</style>
+		
+	
+</head>
+<body>
+	<header style=" z-index: 2;">
+	<img class="logo" src="pic/logo.svg">
+	<div class="header">
+		<div class="menuToggle"></div>
+		<nav>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="package.html">Package Tours</a>
+			<ul>
+			<li><a href="#">Japan</a></li>
+			<li><a href="#">Korea</a></li>
+			<li><a href="#">London</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Rediscover</a><li>
+			<li><a href="#">Singapore Cruises</a></li>
+			<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<script>
+		let menuToggle = document.querySelector('.menuToggle');
+		let header = document.querySelector('header'); 
+	
+		menuToggle.onclick = function () {
+			header.classList.toggle('active');
+		}
+	</script>
+	<section class="video">
+		<div id="vid" style="position: relative; z-index: 1;">
+            <h1 style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Welcome to World Xplore</h1>
+            <video width="100%" autoplay muted loop>
+                <source class="video1" src="vid/pexels-hide-6602522 (540p).mp4" type="video/mp4">
+            </video>
+			<img class="img" src="pic/sky.jpg" alt="sky">
+
+        </div>
+	</section>
+	
+		
+		<section class="all-browsers">
+		  
+		  <article class="browser"style="width:20rem; height:35rem;" >
+			<img class="img" id="j" src="pic/japan.jpg" alt="Japan">
+			<h2>Japan</h2>
+			<p>Fushimi Inari Taisha in Kyoto Prefecture was built in 711 and is one of the oldest and most popular shrines in Kyoto. It is the main Inari Shrine in Japan and famous for its thousands of torii gates.</p>
+			<a href="#" class="btn mt-4">View More</a>
+		</article>
+		  <article class="browser" style="width:20rem; height:35rem;" >
+			<img class="img" id="f" src="pic/france.jpg" alt="France">
+			<h2>France</h2>
+			<p>An object of discord, desire and fascination, the Eiffel Tower never fails to impress. Enriched by a history full of new developments, here you can discover all of its key information.</p>
+			<a href="#" class="btn mt-4">View More</a>
+		</article>
+		  <article class="browser" style="width:20rem; height:35rem;" >
+			<img class="img" id="k" src="pic/korea.jpg" alt="Korea">
+			<h2>Korea</h2>
+			<p>South Korea, officially Republic of Korea, Country, East Asia, occupying the southern half of the Korean peninsula.</p>
+			<a href="#" class="btn mt-4">View More</a>
+		  </article>
+		</section>
+		<footer>
+			<p>
+				<a href="#">Package Tours</a> 
+				<a href="#">Rediscover</a> 
+				<a href="#">Singapore Cruises</a>
+				<a href="#">Contact Us</a><br>
+				<br>
+				©2023 World Xplore | All Rights Reserved
+
+			</p>
+		  </footer>
+</body>
+</html>
